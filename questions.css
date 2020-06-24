@@ -1,0 +1,50 @@
+* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header {
+    font-family: 'Atma';
+    font-size: 20px;
+}
+.section2 li {
+    text-align: center;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 1em;
+}
+.img {
+   width: 100%;
+   max-width: 100%;
+   height: 300px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+.class li { 
+    border: 1px solid black;
+    margin: 0.5em;
+    padding: 0.5em; 
+}
+.button {
+    background-color: yellowgreen;
+    width: 300px;
+    max-width: 100%;
+    height: 50px;
+    font-family: 'Atma';
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    
+}
+.imgemoji {
+    width: 250px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+ 
