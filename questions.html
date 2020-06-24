@@ -7,65 +7,116 @@
   <title>Quiz App</title>
   <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
   <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="questions.css" type="text/css"/>
 </head>
 
 <body>
-    <header role="banner" class="header1">
-        <section class="questions">
-        <p>
-            Question 1: What is the smallest planet in the Solar System?
-            <ul>
+    <header role="banner" class="header">
+        <section class="section1">
+            <img class="img" src="solar-system.jpg" alt="solar system"/>
+        </section>
+        <section class="section2">
+            <ul class="header2" style="list-style-type:none;">
+                <li class="menu">Question: 0/10</li>
+                <li class="menu">Score: 0</li>
+            </ul>
+        </section>
+    <section class="questions">
+        <div class="class">
+            <p>Question 1: What is the smallest planet in the Solar System?</p>
+            <ul class="planets" style="list-style-type:none;">
                 <li>Venus</li>
                 <li>Jupiter</li>
                 <li>Mercury</li>
                 <li>Uranus</li>
             </ul>
-            Answer: Mercury
-        </p>
-        <p>
-            Question 2: What is the largest planet in the Solar System?
-            <ul>
+            <p>Answer: Mercury</p>
+        </div>
+        <div class="class">
+            <p>Question 2: What is the largest planet in the Solar System?</p>
+            <ul class="planets" style="list-style-type:none;">
                 <li>Jupiter</li>
                 <li>Mars</li>
                 <li>Pluto</li>
                 <li>Venus</li>
             </ul>
-            Answer: Jupiter
-        </p>
-        <p>
-            Question 3: What is the hottest planet in the Solar System?
-            <ul>
+            <p>Answer: Jupiter</p>
+        </div>
+        <div class="class">
+            <p>Question 3: What is the hottest planet in the Solar System?</p>
+            <ul class="planets" style="list-style-type:none;">
                 <li>Uranus</li>
                 <li>Neptune</li>
                 <li>Earth</li>
                 <li>Venus</li>
             </ul>
-            Answer: Venus
-        </p>
-        <p>
-            Question 4: What planet in the solar system is farthest from the Sun?
-            <ul>
+            <p>Answer: Venus</p>
+        </div>
+        <div class="class">
+            <p>Question 4: What planet in the solar system is farthest from the Sun?</p>
+            <ul class="planets" style="list-style-type:none;">
                 <li>Neptune</li>
                 <li>Earth</li>
                 <li>Mercury</li>
                 <li>Saturn</li>
             </ul>
-            Answer: Neptune
-        </p>
-        <p>
-            Question 5: What is the second smallest planet in the solar system?
-            <ul>
+            <p>Answer: Neptune</p>
+        </div>
+        <div class="class">
+            <p>Question 5: What is the second smallest planet in the solar system?</p>
+            <ul class="planets" style="list-style-type:none;">
                 <li>Mercury</li>
                 <li>Mars</li>
                 <li>Jupiter</li>
                 <li>Pluto</li>
             </ul>
-            Answer: Mars
-        </p>
-    
+            <p>Answer: Mars</p>
+        </div>
+        <section class="button">
+            <button type="button" class="button">SUBMIT</button>
         </section>
-    </header>
+    </section>
 
+    <div class="correct">
+        <section>
+            <h2>That is correct!</h2>
+        </section>
+        <section>
+            <img class="imgemoji" src="happy-face.png" alt="emoji"/>
+        </section>
+        <section>
+            <p>You are very smart!</p>
+        </section>
+        <section class="button">
+            <button type="button" class="button">NEXT</button>
+        </section>
+    </div>
+    <div class="wrong">
+        <section>
+            <h2>That is not the correct answer</h2>
+        </section>
+        <section>
+            <img class="imgemoji" src="thinking.png" alt="emoji"/>
+        </section>
+        <section>
+            <p>The correct answer is:</p>
+        </section>
+        <section class="button">
+            <button type="button" class="button">NEXT</button>
+        </section>
+    </div>
+    <div class="score">
+        <section>
+            <h2>Your score is:</h2>
+        </section>
+        <section>
+            <img class="imgemoji" src="thumbsup.jpg" alt="emoji"/>
+        </section>
+        <section class="button">
+            <button type="button" class="button">RESTART</button>
+        </section>
+    </div>
+    </header>
+    
 </body>
 </html>
