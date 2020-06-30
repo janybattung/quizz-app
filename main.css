@@ -1,93 +1,115 @@
 body * {
     box-sizing: border-box;
     margin: 0;
-    width: 100%;
+    padding: 0;
+    font-family: 'Atma';
 }
 .img {
-  /* float: left; */
-  width: 100%; 
+  width: 100%;
+  max-width: 100%; 
+  height: 200px;
 }
-.header {
+.container {
   text-align: center;
-  font-family: 'Atma';
+}
+.sizeMe {
+  text-align: center;
+  font-weight: bolder;
+  display: flexbox;
 }
 h1 {
-  font-size: 18px;
+  font-size: 24px;
   color: purple;
   font-weight: bold;
   padding-top: 10px;
 }
 p {
-  font-size: 21px;
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 0.5em;
 }
-.button {
+.startButton {
   background-color: yellowgreen;
-  width: 500px;
+  width: 200px;
   max-width: 100%;
   margin-top: 20px; 
   height: 50px;
   font-family: 'Atma';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder;
   cursor: pointer;
+  border: none;
+  border-radius: 3mm;
 }
 .button:hover,
 .button:active {
   background-color:rgb(60, 9, 201);
   color: white;
 }
-/* @media only screen and (min-width: 320px) {
-  .img {
-    width: 100%;
-    height: 15%;
-  }
-}
-h1 {
-  font-size: 30px;
-  color: purple;
-  font-weight: bold;
-}
-p {
-  font-size: 18px;
-  margin: 20px 20px;
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
 }
 .button {
   background-color: yellowgreen;
-  width: 250px;
-  margin: 10px 10px;
+  width: 150px;
+  max-width: 100%;
+  margin-top: 10px; 
+  margin-bottom: 15px;
   height: 50px;
-  border: none;
   font-family: 'Atma';
   font-size: 16px;
   font-weight: bolder;
+  cursor: pointer;
+  border: none;
   border-radius: 3mm;
-}*/
- @media only screen and (min-width: 928px) {
+}
+.images {
+  margin-bottom: 0;
+  width: 60%;
+  max-width: 150px;
+}
+h3,
+legend {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 15px;
+}
+.answerOption {
+  margin-top: 0.5em;
+}
+.final {
+  display: block;
+}
+
+ @media only screen and (min-width: 1025px) { /*desktop*/
   .img {
     float: left;
     width: 50%;
-    height: 500px;
+    height: 470px;
+    margin-right: 10px;
   }
 h1 {
   font-size: 30px;
   color: purple;
   font-weight: bold;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 p {
   font-size: 21px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
-.button {
-  background-color: yellowgreen;
-  width: 550px;
-  max-width: 100%;
-  margin-top: 40px;
-  height: 60px;
-  border: none;
-  font-family: 'Atma';
+h3,
+legend {
   font-size: 21px;
-  font-weight: bolder;
 }
- }
+.button { 
+  margin-bottom: 15px;
+}
+.bottom {
+  margin: 0;
+  
+}
+} 
