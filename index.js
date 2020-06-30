@@ -35,7 +35,6 @@ const STORE = [
   
 /*displays each question*/
 function renderAQuestion() {
-    console.log('`renderAQuestion` ran');
     if (questionNumber < STORE.length) {
         return questionHtml(questionNumber);
       } else {
@@ -45,18 +44,15 @@ function renderAQuestion() {
       }
     }
 function updateScore() {
-    console.log('`updateScore` ran');
     score++;
     $('.score').text(score);
 }
       
 function updateQuestionNumber() {
-    console.log('`updateQuestionNumber` ran');
     questionNumber++;
     $('.questionNumber').text(questionNumber + 1);
 }
 function resetStats() {
-    console.log('`resetStats` ran');
     score = 0;
     questionNumber = 0;
     $('.score').text(0);
@@ -64,7 +60,6 @@ function resetStats() {
   }
 // /*when a user clicks the start button*/
 function startQuiz() {
-    console.log('`startQuiz`');
     $('.section1').hide();
     $('.altBox').hide();
     $('.header1').hide();
@@ -78,7 +73,6 @@ function startQuiz() {
     });
 }
 function submitAnswer() {
-    console.log('`submitAnswer` ran');
     $('.planetBox').on('submit', function (event) {
         event.preventDefault();
         $('.altBox').hide();
@@ -94,7 +88,6 @@ function submitAnswer() {
         });
   }
 function questionHtml(questionIndex) {
-    console.log('`questionHtml` ran');
     let formMaker = $(`<form>
       <fieldset>
         <legend class="questionText">${STORE[questionIndex].question}</legend>
@@ -114,7 +107,6 @@ function questionHtml(questionIndex) {
     return formMaker;
   }
 function correctAnswer() {
-    console.log('`correctAnswer` ran');
     $('.response').html(
       `<h3>That is correct!</h3>
       <img src="happy-face.png" alt="happy face emoji" class="images" width="200px">
@@ -124,7 +116,6 @@ function correctAnswer() {
     updateScore();
   }
 function wrongAnswer() {
-    console.log('`wrongAnswer` ran');
     $('.response').html(
       `<h3>That's the wrong answer...</h3>
       <img src="thinking.png" alt="thinking face emoji" class="images" width="200px">
@@ -134,7 +125,6 @@ function wrongAnswer() {
     );
   }
 function nextQuestion() {
-    console.log('`nextQuestion` ran');
     $('.planetBox').on('click', '.nextButton', function (event) {
       $('.altBox').hide();
       $('.questionBox').show();
@@ -143,7 +133,6 @@ function nextQuestion() {
     });
   }
 function finalScore() {
-    console.log('`finalScore` ran');
     $('.final').show();
   
     const awesome = [
@@ -180,7 +169,6 @@ function finalScore() {
     );
   }
 function restartQuiz() {
-    console.log('`restartQuiz` ran');
     $('.planetBox').on('click', '.restartButton', function (event) {
       event.preventDefault();
       resetStats();
