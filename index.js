@@ -29,7 +29,6 @@ const STORE = [
           answer: "Mars"
         }
       ];
-
       let score = 0;
       let questionNumber = 0;
   
@@ -109,7 +108,7 @@ function questionHtml(questionIndex) {
 function correctAnswer() {
     $('.response').html(
       `<h3>That is correct!</h3>
-      <img src="happy-face.png" alt="happy face emoji" class="images" width="200px">
+      <img src="/images/happy-face.png" alt="happy face emoji" class="images" width="200px">
         <p class="sizeMe">You are smart!</p>
         <button type="button" class="nextButton button">Next</button>`
     );
@@ -118,7 +117,7 @@ function correctAnswer() {
 function wrongAnswer() {
     $('.response').html(
       `<h3>That's the wrong answer...</h3>
-      <img src="thinking.png" alt="thinking face emoji" class="images" width="200px">
+      <img src="/images/thinking.png" alt="thinking face emoji" class="images" width="200px">
       <p class="sizeMe bottom">The correct answer is:</p>
       <p class="sizeMe bottom">${STORE[questionNumber].answer}</p>
       <button type="button" class="nextButton button">Next</button>`
@@ -137,19 +136,19 @@ function finalScore() {
   
     const awesome = [
       'Congratulations!',
-      './greatJob.jpg',
+      './images/greatJob.jpg',
       'I am proud of you!'
     ];
   
     const good = [
       'Good, not great.',
-      './goodJob.jpg',
+      './images/goodJob.jpg',
       'Keep up the good work!'
     ];
   
     const bad = [
       'Oh no!',
-      './imSorry.jpg',
+      './images/imSorry.jpg',
       'Try again.'
     ];
   
