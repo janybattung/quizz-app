@@ -136,19 +136,19 @@ function finalScore() {
   
     const awesome = [
       'Congratulations!',
-      '.images/greatJob.jpg',
+      './images/greatJob.jpg',
       'I am proud of you!'
     ];
   
     const good = [
       'Good, not great.',
-      '.images/goodJob.jpg',
+      './images/goodJob.jpg',
       'Keep up the good work!'
     ];
   
     const bad = [
       'Oh no!',
-      '.images/imSorry.jpg',
+      './images/imSorry.jpg',
       'Try again.'
     ];
   
